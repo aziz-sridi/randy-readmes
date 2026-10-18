@@ -1,0 +1,242 @@
+{
+  "username": "aziz-sridi",
+  "duration": 21,
+  "from": "2025-10-19",
+  "to": "2026-10-18",
+  "total": 891,
+  "skills": [
+    {
+      "name": "Python",
+      "icon": "python",
+      "color": "#3776AB"
+    },
+    {
+      "name": "TensorFlow",
+      "icon": "tensorflow",
+      "color": "#D87519"
+    },
+    {
+      "name": "OpenCV",
+      "icon": "opencv",
+      "color": "#448C42"
+    },
+    {
+      "name": "React",
+      "icon": "react",
+      "color": "#167F99"
+    },
+    {
+      "name": "PostgreSQL",
+      "icon": "postgresql",
+      "color": "#4169A1"
+    },
+    {
+      "name": "Flutter",
+      "icon": "flutter",
+      "color": "#167FBB"
+    }
+  ],
+  "modules": [
+    {
+      "id": "tegridy-commits",
+      "title": "Tegridy Commits",
+      "description": "Randy draws fake commits, waits out the rain, and returns to the sign in shame.",
+      "duration": 19,
+      "section": "Contributions",
+      "height": 480,
+      "skills": [
+        {
+          "name": "Python",
+          "icon": "python",
+          "color": "#3776AB"
+        },
+        {
+          "name": "TensorFlow",
+          "icon": "tensorflow",
+          "color": "#D87519"
+        },
+        {
+          "name": "OpenCV",
+          "icon": "opencv",
+          "color": "#448C42"
+        },
+        {
+          "name": "React",
+          "icon": "react",
+          "color": "#167F99"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql",
+          "color": "#4169A1"
+        },
+        {
+          "name": "Flutter",
+          "icon": "flutter",
+          "color": "#167FBB"
+        }
+      ],
+      "loop": true,
+      "files": [
+        "tegridy-commits.svg",
+        "tegridy-commits-dark.svg"
+      ]
+    },
+    {
+      "id": "push-access",
+      "title": "Push Access",
+      "description": "Randy presses git push, scattering the contribution calendar.",
+      "duration": 20,
+      "section": "Contributions",
+      "height": 480,
+      "skills": [
+        {
+          "name": "Python",
+          "icon": "python",
+          "color": "#3776AB"
+        },
+        {
+          "name": "TensorFlow",
+          "icon": "tensorflow",
+          "color": "#D87519"
+        },
+        {
+          "name": "OpenCV",
+          "icon": "opencv",
+          "color": "#448C42"
+        },
+        {
+          "name": "React",
+          "icon": "react",
+          "color": "#167F99"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql",
+          "color": "#4169A1"
+        },
+        {
+          "name": "Flutter",
+          "icon": "flutter",
+          "color": "#167FBB"
+        }
+      ],
+      "loop": true,
+      "files": [
+        "push-access.svg",
+        "push-access-dark.svg"
+      ]
+    },
+    {
+      "id": "stack-toolbox",
+      "title": "Skills Board",
+      "description": "Skills grouped by category.",
+      "duration": 21,
+      "section": "Stack",
+      "height": 656,
+      "skills": [
+        {
+          "name": "Python",
+          "icon": "python",
+          "color": "#3776AB",
+          "category": "AI & machine learning"
+        },
+        {
+          "name": "TensorFlow",
+          "icon": "tensorflow",
+          "color": "#D87519",
+          "category": "AI & machine learning"
+        },
+        {
+          "name": "OpenCV",
+          "icon": "opencv",
+          "color": "#448C42",
+          "category": "AI & machine learning"
+        },
+        {
+          "name": "React",
+          "icon": "react",
+          "color": "#167F99",
+          "category": "Frontend"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "javascript",
+          "color": "#8C6A13",
+          "category": "Frontend"
+        },
+        {
+          "name": "HTML",
+          "icon": "html5",
+          "color": "#C7502B",
+          "category": "Frontend"
+        },
+        {
+          "name": "CSS",
+          "icon": "css",
+          "color": "#663CAC",
+          "category": "Frontend"
+        },
+        {
+          "name": "Firebase",
+          "icon": "firebase",
+          "color": "#C27616",
+          "category": "Backend & APIs"
+        },
+        {
+          "name": "REST APIs",
+          "icon": "rest-api",
+          "color": "#46667B",
+          "category": "Backend & APIs"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql",
+          "color": "#4169A1",
+          "category": "Databases"
+        },
+        {
+          "name": "Flutter",
+          "icon": "flutter",
+          "color": "#167FBB",
+          "category": "Mobile"
+        },
+        {
+          "name": "Dart",
+          "icon": "dart",
+          "color": "#167B9C",
+          "category": "Mobile"
+        },
+        {
+          "name": "C++",
+          "icon": "cplusplus",
+          "color": "#356AA0",
+          "category": "Other languages"
+        },
+        {
+          "name": "Git",
+          "icon": "git",
+          "color": "#C74C35",
+          "category": "Tools"
+        },
+        {
+          "name": "Linux",
+          "icon": "linux",
+          "color": "#34383A",
+          "category": "Tools"
+        },
+        {
+          "name": "Postman",
+          "icon": "postman",
+          "color": "#CB5731",
+          "category": "Tools"
+        }
+      ],
+      "loop": true,
+      "files": [
+        "stack-toolbox.svg",
+        "stack-toolbox-dark.svg"
+      ]
+    }
+  ]
+}

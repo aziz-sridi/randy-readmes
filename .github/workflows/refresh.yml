@@ -1,0 +1,45 @@
+name: Refresh Randy README
+
+on:
+  schedule:
+    - cron: '23 5 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - 'randy.json'
+      - 'assets/randy/**'
+      - 'assets/icons/**'
+      - 'assets/fonts/**'
+      - 'assets/weather/**'
+      - '.github/workflows/refresh.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: randy-readme
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+      - name: Render selected modules with public contribution data
+        run: python3 scripts/generate.py --refresh
+      - name: Validate generated assets
+        run: python3 scripts/check.py
+      - name: Commit refreshed artwork
+        run: |
+          git config user.name "$(git log -1 --format=%an)"
+          git config user.email "$(git log -1 --format=%ae)"
+          git add dist assets/contributions.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh Randy README artwork'
+            git push origin HEAD:main
+          fi

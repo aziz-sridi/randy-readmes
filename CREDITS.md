@@ -1,0 +1,14 @@
+# Credits
+
+- **Randy Marsh / South Park:** character and visual identity belong to their respective South Park rights holders. This is an unofficial fan project with no affiliation or endorsement.
+- **Reference:** [reference.png](assets/randy/reference.png), supplied by the user. Original source provenance was not provided.
+- **Character poses:** generated with OpenAI's built-in ImageGen from that supplied reference. Current source PNGs are preserved; the embedded WebP exports retain every visible pixel without loss. Walking and drawing use complete character images, with each whole frame aligned as one unit. Prompts: [original expressions](assets/randy/PROMPT.md), [whole-character walk and drawing](assets/randy/WHOLE-CHARACTER-PROMPT.md), [walk of shame](assets/randy/SHAME-PROMPT.md).
+- **Cloud:** [OpenMoji cloud, 2601](https://github.com/hfg-gmuend/openmoji/blob/master/color/svg/2601.svg), designed by OpenMoji, the open-source emoji and icon project. Licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Artwork is bundled unchanged in `assets/weather/openmoji-cloud.svg`; its license is in `assets/weather/LICENSE.txt`.
+- **Technology icons:** [Simple Icons](https://github.com/simple-icons/simple-icons), downloaded from its official repository. Simple Icons distributes the collection under CC0 1.0; brand marks remain the property of their owners. [Simple Icons license](https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md).
+- **Display font:** Lilita One by Juan Montoreano, from [Google Fonts](https://fonts.google.com/specimen/Lilita+One). SIL Open Font License 1.1, bundled in [assets/fonts/OFL.txt](assets/fonts/OFL.txt).
+- **Sign font:** [South Park, uploaded by jobanbal on FontSpace](https://www.fontspace.com/south-park-font-f10560), bundled unchanged as `assets/fonts/SouthPark.ttf`. The download's supplied [info.txt](assets/fonts/SouthPark-info.txt) lists Public Domain; the font's internal copyright string is "Comedy Central 1998 All rights reserved." Source details are preserved in [assets/fonts/SouthPark-SOURCE.md](assets/fonts/SouthPark-SOURCE.md).
+- **Calendar:** GitHub's public contribution calendar for the configured username. The saved snapshot records its source URL. Contribution counts are real; the character's crayon additions are fictional animation overlays.
+- **REST API symbol:** original code-drawn SVG in `assets/icons/rest-api.svg`, covered by this project's MIT license.
+- **Generator approach:** adapted from Aziz's existing local One-Punch Commits profile generator, particularly its standard-library parser, snapshot validation, and independent SVG output.
+
+The MIT license covers the original library code and documentation. It does not grant rights to South Park characters, supplied or derived character artwork, third-party brand marks, or separately licensed fonts.

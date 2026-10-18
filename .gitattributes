@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.png binary
+*.webp binary
+*.ttf binary
+assets/fonts/** -whitespace
+assets/icons/LICENSE.md -whitespace
+assets/weather/LICENSE.txt -whitespace

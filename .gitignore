@@ -1,0 +1,7 @@
+__pycache__/
+.venv/
+qa/
+*.zip
+output/
+.DS_Store
+Thumbs.db
