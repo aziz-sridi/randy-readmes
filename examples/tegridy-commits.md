@@ -16,6 +16,4 @@ Copy both SVGs into your profile repository's `dist/` folder, then paste:
   <img src="../dist/tegridy-commits.svg" width="900" alt="Randy draws contribution squares with a crayon, then rain washes them away." />
 </picture>
 
-Set your username in `randy.json`, then run `python scripts/generate.py --refresh --modules tegridy-commits`.
-
-[Configuration and setup](../README.md#configuration)
+[Usage](../README.md#usage)

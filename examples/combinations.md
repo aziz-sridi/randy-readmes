@@ -25,4 +25,4 @@ Copy the six SVG files from `dist/` into the same folder in your profile reposit
 
 Each SVG has its own loop. No shared script is required.
 
-[Configuration and setup](../README.md#configuration)
+[Usage](../README.md#usage)

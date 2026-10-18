@@ -16,6 +16,4 @@ Copy both SVGs into your profile repository's `dist/` folder, then paste:
   <img src="../dist/push-access.svg" width="900" alt="Randy presses git push, scatters the calendar, falls, and gets back up." />
 </picture>
 
-Set your username and `skills` in `randy.json`, then run `python scripts/generate.py --refresh --modules push-access`. The first three skills form the staircase.
-
-[Configuration and setup](../README.md#configuration)
+[Usage](../README.md#usage)

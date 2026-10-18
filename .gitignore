@@ -1,7 +1,3 @@
-__pycache__/
-.venv/
-qa/
-*.zip
-output/
+﻿*.zip
 .DS_Store
 Thumbs.db

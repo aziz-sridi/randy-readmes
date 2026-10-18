@@ -18,6 +18,6 @@ Copy `stack-toolbox.svg` and `stack-toolbox-dark.svg` from `dist/` into your pro
   <img src="../dist/stack-toolbox.svg" width="900" alt="Skills organized into AI and machine learning, frontend, backend and APIs, databases, mobile, other languages, and tools." />
 </picture>
 
-Edit `toolbox_skills` in `randy.json`, including each skill's `category`, then run `python scripts/generate.py --modules stack-toolbox`. The board supports 1–16 skills and expands to fit them. Reduced motion shows all skills in their finished positions.
+Reduced motion shows all skills in their finished positions.
 
-[Configuration and setup](../README.md#configuration)
+[Usage](../README.md#usage)
