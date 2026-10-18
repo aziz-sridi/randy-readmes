@@ -1,0 +1,41 @@
+name: Update contributions
+
+on:
+  schedule:
+    - cron: '17 4 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/update-contributions.yml'
+      - 'scripts/**'
+      - 'randy.json'
+      - 'assets/**'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-contributions-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - name: Refresh the public contribution calendar
+        env:
+          CONTRIBUTIONS_USERNAME: ${{ vars.CONTRIBUTIONS_USERNAME || github.repository_owner }}
+        run: python3 scripts/generate.py --refresh --username "$CONTRIBUTIONS_USERNAME"
+      - name: Check the generated animations
+        run: python3 scripts/check.py
+      - name: Commit refreshed SVGs
+        run: |
+          git add dist assets/contributions.json
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update contribution animations"
+          git push

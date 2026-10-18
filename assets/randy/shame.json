@@ -1,0 +1,32 @@
+{
+  "file": "shame-v5.webp",
+  "mime": "image/webp",
+  "format": "whole-character",
+  "width": 1774,
+  "height": 887,
+  "walkFrames": 2,
+  "cells": [
+    [
+      0,
+      0,
+      887,
+      887
+    ],
+    [
+      887,
+      0,
+      887,
+      887
+    ]
+  ],
+  "anchors": [
+    {
+      "x": 552.6011,
+      "y": 840
+    },
+    {
+      "x": 539.916,
+      "y": 840
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "file": "poses.webp",
+  "mime": "image/webp",
+  "width": 1536,
+  "height": 1024,
+  "cells": [[0,0,512,512],[512,0,512,512],[1024,0,512,512],[0,512,512,512],[512,512,512,512],[1024,512,512,512]],
+  "poses": ["neutral", "walk-left", "walk-right", "push", "startled", "guilty"]
+}

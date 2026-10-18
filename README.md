@@ -63,6 +63,32 @@ Randy throws each technology into its category on a wooden board.
 
 Use one animation or [combine all three](examples/combinations.md). Each SVG includes its artwork and animation, so no scripts or installation are needed.
 
-Light and dark versions follow the viewer's GitHub theme. Reduced motion displays the original contribution calendars and completed skills board. The contribution scenes use the bundled calendar snapshot.
+Light and dark versions follow the viewer's GitHub theme. Reduced motion displays the real contribution calendars and completed skills board.
+
+## Automatic contribution updates
+
+The **Update contributions** GitHub Actions workflow refreshes both contribution scenes, in light and dark, daily at 04:17 UTC. It also runs when the generator or configuration changes on `main`, and can be run from **Actions → Update contributions → Run workflow**. It reads the public calendar shown on your GitHub profile, including contributions beyond commits, and commits the regenerated files. No personal access token or installed packages are needed.
+
+Push this repository, including `.github/`, `scripts/`, `assets/`, and `randy.json`, to GitHub. The workflow uses the repository owner's username. To display a different account, set the repository's Actions variable `CONTRIBUTIONS_USERNAME`. On a fork, enable workflows in the **Actions** tab and run the workflow once. GitHub may pause schedules in inactive public repositories; re-enable the workflow if that happens.
+
+For your profile README to receive the updates, embed the files directly from the repository running the workflow. For example, for `aziz-sridi/randy-readmes`:
+
+```html
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aziz-sridi/randy-readmes/main/dist/tegridy-commits-dark.svg" />
+  <img src="https://raw.githubusercontent.com/aziz-sridi/randy-readmes/main/dist/tegridy-commits.svg" width="900" alt="Randy draws contribution squares, then rain washes them away." />
+</picture>
+```
+
+Replace the owner and repository with your fork's details, or use `push-access` for the other scene. GitHub's image cache can delay visible updates. Downloaded copies stay at their downloaded version. Alternatively, copy the workflow, generator, configuration, and assets into your profile repository and keep using the relative embeds above.
+
+To refresh and verify locally with Python 3.10+:
+
+```sh
+python scripts/generate.py --refresh
+python scripts/check.py
+```
+
+Use `--username YOUR_USERNAME --refresh` to generate for a different account, or edit `randy.json`. If GitHub cannot be reached or returns an invalid calendar, generation stops before replacing the saved SVGs.
 
 [Artwork credits](CREDITS.md) · [License](LICENSE)
